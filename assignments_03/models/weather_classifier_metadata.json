@@ -1,0 +1,19 @@
+{
+  "python_version": "3.12.15",
+  "sklearn_version": "1.9.1",
+  "features": [
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "precipitation_sum",
+    "wind_speed_10m_max"
+  ],
+  "label_rule": "7 <= high_C <= 26; low_C >= 0; precipitation_mm < 3; wind_kmh < 30",
+  "city": "Charlotte, NC",
+  "date_range": [
+    "2023-01-01",
+    "2023-12-31"
+  ],
+  "model_type": "KNeighborsClassifier",
+  "test_accuracy": 0.9726027397260274,
+  "test_f1": 0.9655172413793104
+}
